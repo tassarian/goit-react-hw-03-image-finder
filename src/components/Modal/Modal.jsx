@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { Backdrop, ModalImg, StyledModal } from './Modal.styled';
-import { ImageGallery } from 'components/ImageGallery/ImageGallery';
 
 export class Modal extends Component {
 	// = ({ img, tags, action }) =>
