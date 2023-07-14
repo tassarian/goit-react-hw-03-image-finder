@@ -5,10 +5,10 @@ import './index.css';
 import { Global } from 'components/Global.styled';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-	// <React.StrictMode>
-	<>
-		<Global />
-		<App />
-	</>
-	/* </React.StrictMode> */
+	<React.StrictMode>
+		<>
+			<Global />
+			<App />
+		</>
+	</React.StrictMode>
 );
