@@ -1,4 +1,5 @@
 import { StyledButton } from './Button.styled';
+import { PropTypes } from 'prop-types';
 
 export const Button = ({ action }) => {
 	return (
@@ -8,4 +9,8 @@ export const Button = ({ action }) => {
 			</StyledButton>
 		</>
 	);
+};
+
+Button.propTypes = {
+	action: PropTypes.func.isRequired,
 };

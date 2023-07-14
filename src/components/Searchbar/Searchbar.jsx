@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import { Button, Form, Header, Input } from './Searchbar.styled';
 import { FaSearch } from 'react-icons/fa';
 
@@ -22,4 +23,8 @@ export const Searchbar = ({ action }) => {
 			</Form>
 		</Header>
 	);
+};
+
+Searchbar.propTypes = {
+	action: PropTypes.func.isRequired,
 };

@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import { Backdrop, ModalImg, StyledModal } from './Modal.styled';
+import { PropTypes } from 'prop-types';
 
 export class Modal extends Component {
-	// = ({ img, tags, action }) =>
 	componentDidMount() {
 		window.addEventListener('keydown', this.handleKeyDown);
 	}
@@ -31,3 +31,9 @@ export class Modal extends Component {
 		);
 	}
 }
+
+Modal.propTypes = {
+	action: PropTypes.func.isRequired,
+	img: PropTypes.string.isRequired,
+	tags: PropTypes.string.isRequired,
+};
